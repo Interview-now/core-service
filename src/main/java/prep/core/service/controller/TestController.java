@@ -32,6 +32,7 @@ public class TestController {
         Map<String, Object> response = new LinkedHashMap<>();
         response.put("status", 200);
         response.put("message", "Core Service is Running");
+        response.put("Service","Core Service");
         response.put("activeProfile", activeProfile);
         response.put("port", port);
         response.put("time", LocalDateTime.now().format(FORMATTER));
@@ -40,6 +41,7 @@ public class TestController {
         response.put("clientIp", getClientIp(request));
         response.put("endpoint", request.getMethod() + " " + request.getRequestURI());
         response.put("userAgent", userAgent);
+        response.put("Status","UP");
 
         return ResponseEntity.ok(response);
     }
