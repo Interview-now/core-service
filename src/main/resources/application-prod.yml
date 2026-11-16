@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: core.service.prod
+
+
+server:
+  port: 5000

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: core.service.dev
+
+
+server:
+  port: 4000

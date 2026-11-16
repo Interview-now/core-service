@@ -1,0 +1,12 @@
+services:
+  core-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: core-service
+    ports:
+      - "4000:4000"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SERVER_PORT=4000
+    restart: unless-stopped
